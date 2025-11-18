@@ -85,8 +85,6 @@ for model in MODELS:
         }
     results.append(result)
 
-with open("results_metrics.json", "w", encoding="utf-8") as fout:
-    json.dump(results, fout, ensure_ascii=False, indent=2)
 
 for r in results:
     print(f"\nМодель: {r['model']}")
